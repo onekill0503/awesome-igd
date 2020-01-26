@@ -263,10 +263,11 @@ a{text-decoration: none;}
 @media only screen and (max-width:775px){
     .side-right-wrapper{display: none;}
     html, body {
-        overflow-x: hidden;
+        overflow: hidden;
       }
       body {
         position: relative;
+        height:100vh;
       }
     #logo-text{
         font-size: 30px;
