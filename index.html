@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, minimum-scale=1.0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awesome IGD</title>
+
+    <!-- Load Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Pacifico|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Load Style -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3963dd712c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- For Dekstop View -->
+    <div id="view-wrapper">
+        <div class="container">
+            <div class="side-left-wrapper">
+                
+                <!-- Phone Box Mobile View -->
+                <div class="phone-box-wrapper-mobile" toggle-status="off">
+                    <div class="phone-box-mobile">
+    
+                    </div>
+                </div>
+
+                <!-- Banner Text and Download Button -->
+                <div class="title-wrapper">
+                    <div>
+                        <div id="logo-text">Awesome IGD</div>
+                    </div>
+                    <div class="appdec">
+                        Simple Android Application for Downloading Instagram Content made with React-native that is used to download Instagram content (not private content) automatically by simply copying the link content from the Instagram application.
+                    </div>
+                        <div class="downloadButton-wrapper">
+                            <a href="https://raw.github.com/onekill0503/awesome-igd/master/awesomeIGD.apk">
+                                <button class="downloadButton"><i class="fas fa-cloud-download-alt"></i> &nbsp;Download App</button>
+                            </a>
+                            <a href="https://github.com/onekill0503/awesome-igd/blob/master">
+                                <button class="downloadButton"><i class="fab fa-github"></i> &nbsp;View on Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="side-right-wrapper">
+                <div class="phone-box-wrapper">
+                    <div class="phone-box">
+                        <div class="onVideo">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bgicon">
+        <i class="fas fa-video" style="top:10px;left:700px;"></i>
+        <i class="far fa-image" style="top: 50px;left: 100px;"></i>
+        <i class="far fa-thumbs-up" style="top: 200px;left: 400px;"></i>
+        <i class="fas fa-share" style="top: 400px;left: 500px;"></i>
+        <i class="fas fa-camera" style="top: 550px;left: 90px;"></i>
+        <i class="fab fa-instagram" style="top: 120px;left: 600px;"></i>
+        <i class="fas fa-hashtag" style="top: 200px;left: 100px;"></i>
+        <i class="fas fa-podcast" style="top: 590px;left: 500px;"></i>
+        <i class="fas fa-map-marker-alt" style="top: 330px;left: 130px;"></i>
+        <i class="far fa-thumbs-down" style="top: 30px;left: 350px;"></i>
+        <i class="fas fa-users" style="top: 500px;left: 300px;"></i>
+        <i class="far fa-comment-alt" style="top: 250px;left: 650px;"></i>
+    </div>
+</body>
+<script>
+    var phoneboxmobile = document.querySelector(".phone-box-wrapper-mobile")
+    phoneboxmobile.addEventListener('click' , function() {
+        var toggleStatus = this.getAttribute("toggle-status")
+        if(toggleStatus == "off"){
+            this.style.transform = "translate(-50%,-50%)";
+            this.setAttribute('toggle-status', "on")
+        }else if (toggleStatus == "on"){
+            this.style.transform = "translate(-50%,30%)";
+            this.setAttribute('toggle-status', "off")
+        }
+    })
+</script>
+</html>
